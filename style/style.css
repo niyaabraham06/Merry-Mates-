@@ -54,6 +54,7 @@ main a{
     box-sizing: border-box;
     margin: 45px 45px;
     text-align: center;
+    text-decoration: none;
     
 }
 
@@ -70,7 +71,7 @@ main a{
 }
 
 .disp:hover{
-    background-color: aquamarine ;
+    background-color: rgb(21, 167, 147) ;
     color: #080c02;
 }
 
