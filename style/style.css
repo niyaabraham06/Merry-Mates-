@@ -45,33 +45,33 @@ nav a{
 main h3{
     color:#022c22;
     box-sizing: border-box;
-    margin: 10px 15px;
+    margin: 35px 30px;
     font-size: 20px;
     
 }
 
-form{
+main a{
     box-sizing: border-box;
     margin: 45px 45px;
     text-align: center;
     
 }
 
-input[type='submit'] {
+
+.disp{
     background-color: #022c22;
     color: #dfe4e2;
-    padding: 12px 20px;
+    padding: 12px 45px;
     font-size: medium ;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     width: 25%;
-
 }
 
-input[type='submit']:hover{
-    background-color: #365314 ;
-    color: #a3e635;
+.disp:hover{
+    background-color: aquamarine ;
+    color: #080c02;
 }
 
 
