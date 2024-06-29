@@ -4,63 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merry Mates | Form</title>
+    <link rel="stylesheet" href="styleform.css">
 </head>
 <body>
     <form action="">
         <h1>Details for front page</h1>
-        <p>Name: <input type="text" name = 'name'></p>
+        <p>Required fields are followed by *</p>
+        <p>Name: * <input type="text" name = 'name' required > </p>
         <fieldset>
-        <legend>Year of Graduation : </legend>
+        <legend>Year of Graduation : * </legend>
            <p> 2025 <input type="radio" name = 'year' id="2025"> </p>
            <p> 2026 <input type="radio" name = 'year' id="2026"> </p>
            <p> 2027 <input type="radio" name = 'year' id="2027"> </p>
            <p> 2028 <input type="radio" name = 'year' id="2028"> </p>
         </fieldset>
+        <p> </p>
+        
+        <fieldset><p>Enter your Roll No. : * <textarea name="Roll No." id="Roll No." cols="7" rows="1" placeholder="Eg.: 48" required></textarea></p></fieldset>
+        <p> </p>
         <fieldset>
-            <legend>Class : </legend>
-               <p> CS A <input type="radio" name = 'year' id="CS A"> </p>
-               <p> CS B <input type="radio" name = 'year' id="CS B"> </p>
-               <p> CS C <input type="radio" name = 'year' id="CS C"> </p>
-               <p> CSBS <input type="radio" name = 'year' id="CSBS"> </p>
-               <p> EB <input type="radio" name = 'year' id="EB"> </p>
-               <p> EC A <input type="radio" name = 'year' id="EC A"> </p>
-               <p> EC B <input type="radio" name = 'year' id="EC B"> </p>
-               <p> EEE <input type="radio" name = 'year' id="EEE"> </p>
-               <p> EV <input type="radio" name = 'year' id="EV"> </p>
-               <p> MECH <input type="radio" name = 'year' id="MECH"> </p>
+            <legend>Class :* </legend>
+               <p> CS A <input type="radio" name = 'class' id="CS A"> </p>
+               <p> CS B <input type="radio" name = 'class' id="CS B"> </p>
+               <p> CS C <input type="radio" name = 'class' id="CS C"> </p>
+               <p> CSBS <input type="radio" name = 'class' id="CSBS"> </p>
+               <p> EB <input type="radio" name = 'class' id="EB"> </p>
+               <p> EC A <input type="radio" name = 'class' id="EC A"> </p>
+               <p> EC B <input type="radio" name = 'class' id="EC B"> </p>
+               <p> EEE <input type="radio" name = 'class' id="EEE"> </p>
+               <p> EV <input type="radio" name = 'class' id="EV"> </p>
+               <p> MECH <input type="radio" name = 'class' id="MECH"> </p>
         </fieldset>
         <p></p>
-        <fieldset><p>Enter your Roll No. : <textarea name="Roll No." id="Roll No." cols="5" rows="1"></textarea></p></fieldset>
-        <p></p>
-        <fieldset><legend>Enter Subject and Topic Name. :</legend> <p>(Eg. Subject - Linear Algebra and Calculus and </p><p>
-            Topic - Application of Matrices)</p>
-                                  <textarea name="Sub" id="Sub" cols="30" rows="5"></textarea>
+        <fieldset><legend>Enter Subject and Topic Name. : *</legend> <p> </p>
+                                  <textarea name="Sub" id="Sub" cols="30" rows="10"
+                                   placeholder="(Eg:
+                                    Subject - Linear Algebra and Calculus
+                                    Topic - Application of Matrices)" required></textarea>
         </fieldset>
         <p></p>
         <fieldset>
-        <p>Enter Submission Details : 
-            <p>(Name of the teacher,submission date etc.)</p>
-            <textarea name="Sub" id="Sub" cols="30" rows="5"></textarea>
+        <p>Enter Submission Details : *
+            <p></p>
+            <textarea name="Sub" id="Sub" cols="30" rows="5" placeholder="(Name of the teacher,submission date etc.)"></textarea>
         </p>
         </fieldset>
         <p></p>
-        <fieldset><legend>Click the preferred design</legend>
+        <fieldset><legend>Click the preferred design *</legend>
         
-        <p> Design 1 <input type="radio" name = 'design 1' id="design 1"></p>
-        <a target="_blank" href="details.html"><img src="designs/download.png" width='20%' height="25%"></a>
+        <p> Design 1 <input type="radio" name = 'design 1' id="design 1" ></p>
+        <img src="designs/download.png" width='20%' height="25%">
         
             <p> Design 2 <input type="radio" name = 'design 2' id="design 2"></p>
-            <a target="_blank" href="details.html"><img src="designs/download.png" width='20%' height="25%"></a>
+            <img src="designs/download.png" width='20%' height="25%">
             
                 <p> Design 3 <input type="radio" name = 'design 3' id="design 3"></p>
-                <a target="_blank" href="details.html"><img src="designs/download.png" width='20%' height="25%"></a>
+                <img src="designs/download.png" width='20%' height="25%">
                 </fieldset>
+                <p></p>
         <fieldset><p>We provide A4 sheets with margins on 4 sides.How many sheets would you prefer to buy?(₹1 each)
-            <textarea name="margined sheets" id="margined sheets" cols="5" rows="1"></textarea>
+            <textarea name="margined sheets" id="margined sheets" cols="5" rows="1" placeholder="Eg.: 3"></textarea>
         </p></fieldset>
-         
-
-
+        <p></p>
+        <fieldset><p>When do you want the product? * <input type="date" name="deliverydate" id="deliverydate" required></p></fieldset>
+            <p>  </p>
+            <fieldset><p> Contact No : 
+                <textarea name="contactno" id="contactno." cols="30" rows="2"></textarea></fieldset>
+              <p></p>  
+            <fieldset><p> Any other remarks : 
+                <textarea name="remarks" id="remarks" cols="30" rows="3"></textarea></fieldset>
+                <p>Note : Delivery at College</p>
+        <h1>Payment Information</h1>
+        <p> UPI ID : niyaabraham10@okicici </p>
+            <img src="designs/file.png" width='20%' height="25%">
+        <p></p>
+        <fieldset><p>Upload the screenshot of the payment *</p>
+        <input type="file" id="myFile" name="filename" required></fieldset>
+        <p> </p>
+        <input type="submit" value="Submit">
             </form> 
 </body>
 </html>
